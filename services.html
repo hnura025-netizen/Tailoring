@@ -31,17 +31,47 @@
     <p>Stylish, clean, and modern designs with perfection. </p>
   </div>
 
-  <div class="card">
-    <h3>School Uniforms</h3>
-    <p>Strong materials and neat finishing.</p>
+  <section class="content">
+  <h1>Our Services</h1>
+
+  <!-- Service Buttons -->
+  <div class="service-buttons">
+    <button onclick="showService('men')">Men’s Wear</button>
+    <button onclick="showService('women')">Women’s Wear</button>
+    <button onclick="showService('uniform')">School Uniforms</button>
+    <button onclick="showService('adjust')">Adjustments</button>
   </div>
 
-  <div class="card">
-    <h3>Adjustments & Fittings</h3>
-    <p>Resize and correct old or new outfits.</p>
+  <!-- Image Galleries -->
+
+  <div id="men" class="service-gallery">
+    <img src="images/men1.jpg">
+    <img src="images/men2.jpg">
+  </div>
+
+  <div id="women" class="service-gallery">
+    <img src="images/women1.jpg">
+    <img src="images/women2.jpg">
+  </div>
+
+  <div id="uniform" class="service-gallery">
+    <img src="images/uniform1.jpg">
+  </div>
+
+  <div id="adjust" class="service-gallery">
+    <img src="images/adjust1.jpg">
   </div>
 
 </section>
+
+<script>
+function showService(serviceId) {
+  const galleries = document.querySelectorAll('.service-gallery');
+  galleries.forEach(gallery => gallery.style.display = 'none');
+
+  document.getElementById(serviceId).style.display = 'grid';
+}
+</script>
 
 <footer>
   <p>© 2026 Hussain Tailoring</p>
