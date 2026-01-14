@@ -104,3 +104,25 @@ footer {
     font-size: 28px;
   }
 }
+.main-menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.main-menu li {
+  margin-left: 15px;
+}
+
+.social-link {
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.social-link a {
+  color: #f59e0b;
+  font-weight: bold;
+  text-decoration: none;
+}
